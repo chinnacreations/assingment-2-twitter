@@ -1,0 +1,62 @@
+GET http://localhost:3006/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+
+POST http://localhost:3006/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+
+POST http://localhost:3006/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+
+GET http://localhost:3006/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjYwOTE4fQ.ACC-2zelETyvI3HrhOXyOrU9FbBGWT3miq2hmhxH5TU
+###
+
+GET http://localhost:3006/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+
+GET http://localhost:3006/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+
+GET http://localhost:3006/tweets/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+
+GET http://localhost:3006/tweets/8/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+
+GET http://localhost:3006/tweets/8/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+GET http://localhost:3006/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+###
+
+POST http://localhost:3006/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjkxNjU3MjY5fQ.tcBlfKUG-4e44Of3HIta4UTZa7i3glxhioGCdKkiSug
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+###
+
+DELETE http://localhost:3006/tweets/3/
